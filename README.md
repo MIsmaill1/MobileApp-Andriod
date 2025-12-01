@@ -1,2 +1,2 @@
-# MobileApp
-Mobile Application that are developed in React Native
+# MobileApp Andriod
+Mobile Application (andriod) that are developed in React Native
