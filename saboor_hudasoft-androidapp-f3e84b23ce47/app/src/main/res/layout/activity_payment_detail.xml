@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PaymentDetail">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/top_city_logo_with_border">
+                </include>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:id="@+id/back_to_paymentDetail"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_30sdp">
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/blue_back_left_arrow_icon">
+
+                                </ImageView>
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/sweetsanspro_bold"
+                                android:text="@string/payment_detail"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:paddingTop="4dp">
+
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/notification_paymentDetail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/notification_icon"></ImageView>
+
+                                <LinearLayout
+                                    android:id="@+id/notification_Count_bg"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/noti_count_circle"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginStart="@dimen/_13sdp">
+                                    <TextView
+                                        android:id="@+id/notification_Count"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:visibility="visible"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:textSize="@dimen/_8sdp"
+                                        android:text="@string/_23">
+                                    </TextView>
+                                </LinearLayout>
+                            </FrameLayout>
+                            <ImageView
+                                android:id="@+id/user_icon_paymentDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:src="@mipmap/user_icon"></ImageView>
+
+                            <LinearLayout
+                                android:id="@+id/signup_btn_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:src="@mipmap/user_icon">
+                                </ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:gravity="bottom"
+                                    android:layout_marginStart="10dp"
+                                    android:textColor="@color/bg_light_blue_color"
+                                    android:text="Signup">
+                                </TextView>
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/payment_text"
+                            android:textSize="@dimen/_10sdp"
+                            android:fontFamily="@font/sweetsanspro_regular"
+                            android:visibility="visible">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:background="@drawable/shadow1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="left"
+                                android:layout_gravity="fill_horizontal">
+                                <TextView
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:gravity="left"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/bank">
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/bank_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:gravity="left"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/bank_of_punjab">
+                                </TextView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:gravity="left"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/branch_name">
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/barnch_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:gravity="left"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/bop_0283_g_11_markaz_islamabad">
+                                </TextView>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/title_of_account">
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/TitleOfAccount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/dynast_associates_topcity_1">
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/account">
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/Account"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/_6010061488300017">
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/iban">
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/IBAN"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/pk34bpun6010061488300017">
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_9sdp"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/currency_code">
+                                </TextView>
+                                <TextView
+                                    android:id="@+id/CurrencyCode"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/pkr">
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_1_fill_the_online_form_available_at_topcity_1_website_direct_link_is_also_copied_below"
+                            android:textSize="@dimen/_10sdp"
+                            android:fontFamily="@font/sweetsanspro_regular"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:visibility="visible">
+                        </TextView>
+
+                        <LinearLayout
+                            android:id="@+id/online_payment_receipt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="37dp"
+
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_7sdp"
+                            android:paddingLeft="@dimen/_7sdp"
+                            android:background="@drawable/blue_button_rounded"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:text="@string/online_payment_receipt"
+                                android:textAllCaps="false"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_11sdp"></TextView>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:fontFamily="@font/sweetsanspro_regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_3_the_form_filled_by_any_allot_tee_will_be_automatically_sent_to_a_dedicated_finance_email_4_upon_clearing_of_the_relevant_instrument_finance_department_will_update_the_relevant_account_statement_and_will_share_the_same_with_record_section_for_physical_file_updation_relevant_allot_tee_for_acknowledgement"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_30sdp"
+                            android:visibility="visible">
+                        </TextView>
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

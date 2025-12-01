@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/news_and_announcements_open"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_box_light_blue"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:elevation="12dp"
+                    android:id="@+id/view2"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="15dp"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/news_and_announcements_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/image" />
+                </androidx.cardview.widget.CardView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="10dp"
+                    android:padding="15dp">
+                    <TextView
+                        android:id="@+id/news_annoce_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/sweetsanspro_bold"
+                        android:textStyle="bold"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/bg_light_blue_color"
+                        android:text="Construction Incentive Offer For Topcity-1 Allottees Is Extended.">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/news_annoce_descrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="@dimen/_9sdp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/sweetsanspro_regular"
+                        android:layout_marginEnd="40dp"
+                        android:textColor="@color/black"
+                        android:text="@string/on_special_insistence_of_our_dealer_s_and_valued_allotter_s_the_management_of_topcity_1_has_decided_to_extend_the_new_year_construction_incentive_offer_till_30th_april_2021">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+            android:paddingBottom="10dp"
+            android:background="@drawable/rounded_mehandi_color_box"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/news_annoce_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sweetsanspro_bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/_25">
+            </TextView>
+            <TextView
+                android:id="@+id/news_annoce_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sweetsanspro_bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/jan">
+            </TextView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

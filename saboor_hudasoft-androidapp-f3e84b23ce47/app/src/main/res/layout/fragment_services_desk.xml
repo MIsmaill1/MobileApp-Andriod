@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Activity.ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="invisible"
+                android:orientation="vertical">
+
+                <include layout="@layout/top_city_logo_with_nav"></include>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/back_to_ServiceDesk"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:visibility="gone"
+                                android:src="@mipmap/blue_back_left_arrow_icon">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sweetsanspro_bold"
+                                android:text="@string/service_desk"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16sdp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="4dp">
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:id="@+id/notification_Servicedesk"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/notification_icon">
+                                </ImageView>
+                                <LinearLayout
+                                    android:id="@+id/notification_Count_bg"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/noti_count_circle"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginStart="@dimen/_13sdp">
+                                    <TextView
+                                        android:id="@+id/notification_Count"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:visibility="visible"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:textSize="@dimen/_8sdp"
+                                        android:text="@string/_23">
+                                    </TextView>
+                                </LinearLayout>
+                            </FrameLayout>
+
+
+                            <ImageView
+                                android:id="@+id/user_icon_ServiceDesk"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:src="@mipmap/user_icon">
+                            </ImageView>
+
+                            <LinearLayout
+                                android:id="@+id/signup_btn_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:id="@+id/signup_text_home"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:gravity="bottom"
+                                    android:text="Signup"
+                                    android:textColor="@color/bg_light_blue_color"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:visibility="gone">
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/complains_box"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_marginEnd="20dp"
+                    android:visibility="visible"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/rectangular_rounded_frame"
+                    android:backgroundTint="@color/bg_light_blue_color">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="70dp"
+                            android:layout_marginBottom="-10dp"
+                            android:padding="15dp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/complain_icon"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/sweetsanspro_bold"
+                            android:gravity="center"
+                            android:text="@string/complaint"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14sdp"></TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/comunity_service_box"
+                    android:layout_width="160dp"
+                    android:layout_height="190dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/rectangular_rounded_frame"
+                    android:backgroundTint="@color/dim_gray">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="70dp"
+                            android:layout_marginBottom="-25dp"
+                            android:padding="15dp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/community_services"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="35dp"
+                            android:fontFamily="@font/sweetsanspro_bold"
+                            android:gravity="center"
+                            android:text="@string/community_services"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp"></TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</ScrollView>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.HS.Topcity">
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <uses-permission
+        android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.MANAGE_MEDIA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TopCity"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activity.FullImages"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.MangementDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ComplaintCreateSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Menu"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Guest.ui.GuestDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.FandQ"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.WaterConnection"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Possession"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Allotment"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Transfer"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Procedures"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Download"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.PaymentDetailReceipt"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.PaymentDetail"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Development"
+            android:exported="true" />
+        <activity
+            android:name=".FeedbackSuccessfully"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Contact"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ComplaintCreated"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.FullScreenImagesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.UserSharedAccountDetail"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ComplaintWithDrawSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ComplaintDetails"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SubCommunityService"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SubFeature"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Complaint"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.CommunityService"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SharedAccountUserList"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SharedAccountSuccessfully"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.AddSharedAccount"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SharedAccount"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Notification"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.EventDetails"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.PropertyDetails"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.NewsAnnounceDetail"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.NewAnnouncementList"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.UserProfile"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Dashboard"
+            android:exported="true"
+            android:label="@string/title_activity_dashboard" />
+        <activity
+            android:name=".Activity.FingerprintVerify"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.BiometricLogin"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.NewPassword"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ForgetpassOtpVerify"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ForgetPasswordEmail"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ForgetPassword"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Otp_verification"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SignupForm"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Signup"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Login"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SplashScreen4"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SplashScreen2"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.SplashScreen1"
+            android:exported="true">
+
+        </activity>
+
+        <service
+            android:name=".FireBase.MyFirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FireBase.MyFireBaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA4z1nMNMtAwP47zWC0Xd7_gt67A3EPCMI" />
+    </application>
+
+</manifest>

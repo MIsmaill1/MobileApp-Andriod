@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MangementDashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFCFF"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/top_city_logo_with_border">
+                </include>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/back_to_subComplaint"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_30sdp">
+
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/blue_back_left_arrow_icon">
+
+                                </ImageView>
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/sub_complain_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sweetsanspro_bold"
+                                android:text="@string/management_dashboard"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16sdp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:paddingTop="4dp">
+
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/notification_SubComplaint"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/notification_icon"></ImageView>
+
+                                <LinearLayout
+                                    android:id="@+id/notification_Count_bg"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:layout_marginStart="@dimen/_13sdp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/noti_count_circle"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/notification_Count"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:gravity="center"
+                                        android:text="@string/_23"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_8sdp"
+                                        android:textStyle="bold"
+                                        android:visibility="visible"></TextView>
+                                </LinearLayout>
+                            </FrameLayout>
+
+                            <ImageView
+                                android:id="@+id/user_icon_SubComplaint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:src="@mipmap/user_icon"></ImageView>
+
+                            <LinearLayout
+                                android:id="@+id/signup_btn_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:id="@+id/signup_text_home"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:gravity="bottom"
+                                    android:text="Signup"
+                                    android:textColor="@color/bg_light_blue_color"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:visibility="gone"></TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_gravity="center"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_20sdp"
+                        android:backgroundTint="@color/bg_light_blue_color"
+                        android:background="@drawable/rounded_box_light_blue"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:src="@mipmap/user_white_icon">
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/total_user_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_30sdp"
+                            android:text="@string/_200"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/sweetsanspro_regular">
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="@string/total_no_of_users"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/sweetsanspro_regular">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_gravity="center"
+                        android:paddingTop="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_20sdp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/total_complaint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_28sdp"
+                            android:text="@string/_200"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/sweetsanspro_bold">
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="@string/total_no_of_complaints"
+                            android:textColor="#878787"
+                            android:fontFamily="@font/sweetsanspro_regular">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:id="@+id/mangeDashboard_item_count">
+                </androidx.recyclerview.widget.RecyclerView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:columnCount="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:layout_columnWeight="2"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginBottom="10dp"
+                            android:paddingBottom="@dimen/_15sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:background="@drawable/rounded_box_light_blue"
+                            android:backgroundTint="@color/dashboard_box_bg"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:id="@+id/active_comp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_28sdp"
+                                android:text="@string/_200"
+                                android:textColor="@color/dark_green"
+                                android:fontFamily="@font/sweetsanspro_heavy">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_14sdp"
+                                android:text="@string/active"
+                                android:textColor="#878787"
+                                android:fontFamily="@font/sweetsanspro_regular">
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="7dp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_15sdp"
+                            android:backgroundTint="@color/dashboard_box_bg"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/rounded_box_light_blue"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/resloved_comp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+
+                                android:textSize="@dimen/_28sdp"
+                                android:text="@string/_200"
+                                android:textColor="@color/bg_light_blue_color"
+                                android:fontFamily="@font/sweetsanspro_heavy">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_14sdp"
+                                android:text="@string/resloved"
+                                android:textColor="#878787"
+                                android:fontFamily="@font/sweetsanspro_regular">
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:paddingBottom="@dimen/_15sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:background="@drawable/rounded_box_light_blue"
+                            android:backgroundTint="@color/dashboard_box_bg"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/pending_comp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_28sdp"
+                                android:text="@string/_200"
+                                android:textColor="#F3A303"
+                                android:fontFamily="@font/sweetsanspro_heavy">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_14sdp"
+                                android:text="@string/pending"
+                                android:textColor="#878787"
+                                android:fontFamily="@font/sweetsanspro_regular">
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="2"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:paddingBottom="@dimen/_15sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:background="@drawable/rounded_box_light_blue"
+                            android:backgroundTint="@color/dashboard_box_bg"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/delay_comp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_28sdp"
+                                android:text="@string/_200"
+                                android:textColor="#FF0000"
+                                android:fontFamily="@font/sweetsanspro_heavy">
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_14sdp"
+                                android:text="@string/delay"
+                                android:textColor="#878787"
+                                android:fontFamily="@font/sweetsanspro_regular">
+                            </TextView>
+                        </LinearLayout>
+
+                    </GridLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/sweetsanspro_bold"
+                        android:text="@string/complaints_categories_Stats"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp">
+
+                    </TextView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mangeDashboard_item">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="@string/of_complaints"
+                        android:layout_weight="1"
+                        android:textColor="@color/month_text_color"
+                        android:fontFamily="@font/sweetsanspro_regular">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="@string/of_complaints"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/sweetsanspro_regular">
+                    </TextView>
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barchart"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_height="300dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:orientation="horizontal">
+                    
+
+
+                    <LinearLayout
+                        android:id="@+id/today"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        android:layout_marginEnd="5dp"
+
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/today_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/sweetsanspro_bold"
+                            android:text="@string/today"
+                            android:textColor="@color/month_text_color"
+                            android:textSize="@dimen/_13sdp">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/week"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/week_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/sweetsanspro_bold"
+                            android:text="@string/week"
+                            android:textColor="@color/month_text_color"
+                            android:textSize="@dimen/_13sdp">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/month"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/month_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/sweetsanspro_bold"
+                            android:text="@string/month"
+                            android:textColor="@color/month_text_color"
+                            android:textSize="@dimen/_13sdp">
+                        </TextView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+         
+
+        </ScrollView>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

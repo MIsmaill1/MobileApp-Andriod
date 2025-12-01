@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home1"
+        android:name="com.HS.Topcity.Activity.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_announce1"
+        android:name="com.HS.Topcity.Fragsment.NewsAndAnnocementList"
+        android:label="@string/announcement"
+        tools:layout="@layout/fragment_news_and_annocement_list" />
+
+    <fragment
+        android:id="@+id/navigation_master1"
+        android:name="com.HS.Topcity.Fragsment.MasterPlan"
+        android:label="@string/master_plan"
+        tools:layout="@layout/fragment_master_plan" />
+    <fragment
+        android:id="@+id/navigation_feature1"
+        android:name="com.HS.Topcity.Fragsment.Features"
+        android:label="@string/features"
+        tools:layout="@layout/fragment_features" />
+</navigation>

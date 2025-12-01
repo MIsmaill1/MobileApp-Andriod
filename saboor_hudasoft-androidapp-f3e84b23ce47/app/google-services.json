@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "822239662422",
+    "project_id": "top-city-1-prod",
+    "storage_bucket": "top-city-1-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822239662422:android:af18d4b597d858d088c6f7",
+        "android_client_info": {
+          "package_name": "com.HS.Topcity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822239662422-d28tc0529jjme8bfsge7c5hpga3tj216.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcjXCD1kLVv_77pjmZozIU9349Iyr4gRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822239662422-d28tc0529jjme8bfsge7c5hpga3tj216.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "822239662422-d25bjis8snij7l14fb0uhb01ivqo7nt4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hudasoft.TopCity-1.app-ios"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

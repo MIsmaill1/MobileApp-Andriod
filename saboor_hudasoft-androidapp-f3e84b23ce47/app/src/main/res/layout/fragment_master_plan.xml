@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ui.home.HomeFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:visibility="invisible"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/top_city_logo_with_nav">
+                </include>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/back_tomasterpan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:scaleType="fitXY"
+                                android:visibility="gone"
+                                android:src="@mipmap/blue_back_left_arrow_icon"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/sweetsanspro_bold"
+                                android:text="@string/master_plan"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16sdp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="4dp">
+
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:id="@+id/notification_masterplan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/notification_icon">
+                                </ImageView>
+                                <LinearLayout
+                                    android:id="@+id/notification_Count_bg"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/noti_count_circle"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginStart="@dimen/_13sdp">
+                                    <TextView
+                                        android:id="@+id/notification_Count"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:visibility="visible"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:textSize="@dimen/_8sdp"
+                                        android:text="@string/_23">
+                                    </TextView>
+                                </LinearLayout>
+                            </FrameLayout>
+                            <ImageView
+                                android:id="@+id/user_icon_masterplan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:src="@mipmap/user_icon">
+                            </ImageView>
+
+                            <LinearLayout
+                                android:id="@+id/signup_btn_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/user_icon">
+                                </ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:gravity="bottom"
+                                    android:layout_marginStart="10dp"
+                                    android:textColor="@color/bg_light_blue_color"
+                                    android:text="Signup">
+                                </TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:overScrollMode="never"
+                    android:layout_marginTop="20dp"
+                    android:fillViewport="true">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                         <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="420dp"
+                             android:backgroundTint="@color/white"
+                            android:orientation="vertical">
+
+                             <WebView
+                                 android:id="@+id/pdfView"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="fill_parent"
+                                 android:layout_alignParentBottom="true"
+                                 android:layout_marginLeft="-20dp"
+                                 android:layout_marginTop="-25dp"
+                                 android:layout_marginRight="-20dp"
+                                 android:background="@color/white"
+                                 android:backgroundTint="@color/white"
+                                 android:fitsSystemWindows="true"
+                                 android:visibility="gone"
+                                 tools:layout_alignParentStart="true" />
+
+                             <com.github.barteksc.pdfviewer.PDFView
+                                 android:id="@+id/pdfView1"
+                                 android:layout_width="match_parent"
+                                 android:visibility="gone"
+                                 android:layout_height="match_parent" />
+
+
+                             <com.HS.Topcity.CustomClasses.TouchImageView
+                                 android:id="@+id/masterPlan_map_image"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="500dp"
+                                 android:adjustViewBounds="true"
+                                 android:contentDescription="@string/master_plan"
+                                 android:nestedScrollingEnabled="false"
+                                 android:scaleType="fitXY"
+                                 android:scrollbars="vertical"
+                                 android:src="@mipmap/masterplan">
+
+                             </com.HS.Topcity.CustomClasses.TouchImageView>
+
+
+                             <com.otaliastudios.zoom.ZoomImageView
+                                 android:layout_width="match_parent"
+                                 android:layout_height="470dp"
+                                 android:scaleType="fitXY"
+                                 android:scrollbars="vertical|horizontal"
+                                 android:visibility="gone"
+                                 app:alignment="center"
+                                 app:animationDuration="280"
+                                 app:flingEnabled="true"
+                                 app:horizontalPanEnabled="true"
+                                 app:maxZoom="2.5"
+                                 app:maxZoomType="zoom"
+                                 app:minZoom="0.7"
+                                 app:minZoomType="zoom"
+                                 app:oneFingerScrollEnabled="true"
+                                 app:overPinchable="true"
+                                 app:overScrollHorizontal="true"
+                                 app:overScrollVertical="true"
+                                 app:scrollEnabled="true"
+                                 app:threeFingersScrollEnabled="true"
+                                 app:transformation="centerInside"
+                                 app:transformationGravity="auto"
+                                 app:twoFingersScrollEnabled="true"
+                                 app:verticalPanEnabled="true"
+                                 app:zoomEnabled="true" />
+                         </RelativeLayout>
+
+<!--                    <ImageView-->
+<!--                     android:id="@+id/masterPlan_map_image"-->
+<!--                       android:layout_width="match_parent"-->
+<!--                       android:layout_height="500dp"-->
+<!--                       android:src="@mipmap/image"-->
+<!--                       android:scaleType="fitXY">-->
+<!--                   </ImageView>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/_90sdp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/masterPlan_download"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/down1">
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/masterPlan_down2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+
+                            android:background="@color/light_dim_gray"
+                            android:src="@mipmap/down2">
+                        </ImageView>
+
+                    </LinearLayout>
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center"-->
+<!--                        android:orientation="vertical">-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:gravity="center"-->
+<!--                            android:layout_marginRight="30dp"-->
+<!--                            android:layout_marginLeft="30dp"-->
+<!--                            android:textSize="@dimen/_12sdp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:fontFamily="@font/sweetsanspro_bold"-->
+<!--                            android:text="Topcity-1 has received NOCS from all concerned authorities :">-->
+
+<!--                        </TextView>-->
+<!--                    </LinearLayout>-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_marginTop="20dp"-->
+<!--                        android:orientation="horizontal">-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:src="@mipmap/rdaweblogo200">-->
+<!--                        </ImageView>-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:src="@mipmap/nhanewlogo200">-->
+<!--                        </ImageView>-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:src="@mipmap/mpnewlogo1">-->
+<!--                        </ImageView>-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:src="@mipmap/mplogo4">-->
+<!--                        </ImageView>-->
+
+<!--                    </LinearLayout>-->
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:src="@mipmap/mpnewlogo6">-->
+<!--                        </ImageView>-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:src="@mipmap/mpnewlogo7">-->
+<!--                        </ImageView>-->
+<!--                        <ImageView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:src="@mipmap/mpnewlogo8">-->
+<!--                        </ImageView>-->
+
+<!--                    </LinearLayout>-->
+                </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

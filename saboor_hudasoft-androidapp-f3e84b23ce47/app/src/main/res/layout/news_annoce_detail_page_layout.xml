@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/details_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/image"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay_card_custom_corners">
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@color/image_overlay_color"
+                        android:visibility="visible"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay_card_custom_corners"></com.google.android.material.imageview.ShapeableImageView>
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical">
+                        <include
+                            layout="@layout/top_city_logo_with_border">
+                        </include>
+
+                        <ImageView
+                            android:id="@+id/backtodashboard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="25dp"
+                            android:src="@mipmap/back_arrow_icon">
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/details_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/sweetsanspro_bold"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/black"
+                        android:text="@string/construction_incentive_offer_for_topcity_1_allottees_is_extended">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="7dp"
+                            android:src="@mipmap/calender">
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/details_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_10sdp"
+                            android:fontFamily="@font/sweetsanspro_regular"
+                            android:text="@string/_24_november_2021">
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="7dp"
+                            android:src="@mipmap/clock_icon">
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/details_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/sweetsanspro_regular"
+                            android:textSize="@dimen/_10sdp"
+                            android:text="@string/_07_03_pm">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="30dp">
+
+                    <TextView
+                        android:id="@+id/details_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:textSize="@dimen/_9sdp"
+                        android:fontFamily="@font/sweetsanspro_light"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/on_special_insistence_of_our_dealer_s_and_valued_allotter_s_the_management_of_topcity_1_has_decided_to_extend_the_new_year_construction_incentive_offer_till_30th_april_2021">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/shadow1"
+                    android:layout_marginBottom="30dp">
+
+                    <TextView
+                        android:id="@+id/details_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sdp"
+                        android:padding="15dp"
+                        android:fontFamily="@font/sweetsanspro_light"
+                        android:text="@string/please_note_that_the_incentives_offered_by_topcity_1_are_only_for_residential_and_mini_commercial_in_sector_a_b_c_d_i_partial_possession_and_the_offer_will_expire_on_april_30_2021_note_the_allotters_must_have_to_start_construction_within_02_months_from_the_date_of_this_offer_otherwise_they_will_have_to_pay_all_the_waived_off_amounts">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/details_perrvious"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_11sdp"
+                            android:visibility="gone"
+                            android:textColor="@color/bg_light_blue_color"
+                            android:fontFamily="@font/sweetsanspro_regular"
+                            android:text="@string/previous">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/details_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_11sdp"
+                            android:textColor="@color/bg_light_blue_color"
+                            android:fontFamily="@font/sweetsanspro_regular"
+                            android:text="@string/next">
+                        </TextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

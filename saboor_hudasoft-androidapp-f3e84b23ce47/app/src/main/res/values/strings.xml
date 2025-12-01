@@ -1,0 +1,436 @@
+<resources>
+    <string name="app_name">TopCity-1</string>
+    <string name="build_your">Build Your</string>
+    <string name="dream_home">Dream Home</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</string>
+    <string name="email_addresses">Email Address</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password ?</string>i
+    <string name="login">Login</string>
+    <string name="biometric_login">Biometric Login</string>
+    <string name="continue_as_guest">Continue As Guest</string>
+    <string name="enter_registered_cnic">Enter Registered CNIC</string>
+    <string name="name">Name</string>
+    <string name="name_re">Name <font color='#FF0000'>*</font></string>
+    <string name="phone_re">Phone <font color='#FF0000'>*</font></string>
+    <string name="email_re">Email <font color='#FF0000'>*</font></string>
+    <string name="msg_re">Message <font color='#FF0000'>*</font></string>
+    <string name="required"><font color='#FF0000'>* </font>Requried</string>
+    <string name="subject_re">Subject <font color='#FF0000'>*</font></string>
+    <string name="_42101_0372650_2">42101-0372650-2</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signup">Signup</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="a_otp_has_been_sent_to_your_mobile_number">A OTP has been sent to your mobile number</string>
+    <string name="_987_6543_3211">+987 6543 3211</string>
+    <string name="useremail_domainname_com">useremail@domainname.com</string>
+    <string name="resend_otp"><u>Resend OTP</u></string>
+    <string name="and_to_your_email_address">and to your email address</string>
+    <string name="didn_t_you_receive_the_otp">Didn\'t you receive the OTP?</string>
+    <string name="verify">Verify</string>
+    <string name="we_will_send_you_a_one_time_password_to_this_mobile_number">We will send you a one-time password to this mobile number</string>
+    <string name="enter_your_mobile_number">Enter Your Mobile Number</string>
+    <string name="reset_with_email">Reset with Email</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="reset_with_phone_number">Reset with Phone Number</string>
+    <string name="password_desn_t_match">Password Desn\'t match</string>
+    <string name="enter_the_otp_sent_to">Enter the OTP sent to</string>
+    <string name="password_reset">Password Reset</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="new_password">New Password</string>
+    <string name="update">Update</string>
+    <string name="please_place_your_finger_over_the_sensor">Please place your finger over the sensor</string>
+    <string name="don_t_have_a_fingerprint_tap_here"><u>Don\'t have a fingerprint? Tap here</u></string>
+    <string name="biometric_sign_up">Biometric Sign Up</string>
+    <string name="put_your_finger_over_the_sensor_and_lift_afterwhen_you_feel_the_vibration_please_repeatthis_procedure">Put your finger over the sensor and lift afterwhen you feel the vibration. Please repeatthis procedure.</string>
+    <string name="login_to_access_the_app">Login To Access The App</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="features">Features</string>
+    <string name="service_desk">Service Desk</string>
+    <string name="master_plan">Master Plan</string>
+    <string name="more">More</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello">Hello,</string>
+    <string name="talha">Talha!</string>
+    <string name="news_and_announcements">News and Announcements</string>
+    <string name="my_property">My Property</string>
+    <string name="on_special_insistence_of_our_dealer_s_and_valued_allotter_s_the_management_of_topcity_1_has_decided_to_extend_the_new_year_construction_incentive_offer_till_30th_april_2021">On special insistence of our dealer\'s and …valued allotter\'s, the Management of Topcity-1 has decided to extend the "New Year Construction Incentive Offer" till 30th April,2021.</string>
+    <string name="jan">Jan</string>
+    <string name="complaint">Complaint</string>
+    <string name="_453698">453698</string>
+    <string name="active">Active</string>
+    <string name="water">water</string>
+    <string name="update_details">Update Details</string>
+    <string name="events">Events</string>
+    <string name="_5_marla_balloting_event">5 Marla Balloting Event</string>
+    <string name="view_more"><u>View More</u></string>
+    <string name="_24_november_2021">24 November 2021</string>
+    <string name="_07_03_pm">07:03 pm</string>
+    <string name="time">Time:</string>
+    <string name="_59">59</string>
+    <string name="standard_sign_in">Standard Sign In</string>
+    <string name="id">ID:</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="b_01_block_7_street_2_in_topcity1">B-01 - Block 7 - Street 2 In Topcity1</string>
+    <string name="my_account">My Account</string>
+    <string name="profile_options">Profile Options</string>
+    <string name="logout"><u>Logout</u></string>
+    <string name="create_shared_accounts">Create Shared Accounts</string>
+    <string name="cnic_number">CNIC Number</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="edit_details">Edit Details</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="_25">25</string>
+    <string name="construction_incentive_offer_for_topcity_1_allottees_is_extended">Construction Incentive Offer For Topcity-1 Allottees Is Extended.</string>
+    <string name="please_note_that_the_incentives_offered_by_topcity_1_are_only_for_residential_and_mini_commercial_in_sector_a_b_c_d_i_partial_possession_and_the_offer_will_expire_on_april_30_2021_note_the_allotters_must_have_to_start_construction_within_02_months_from_the_date_of_this_offer_otherwise_they_will_have_to_pay_all_the_waived_off_amounts"><![CDATA[*Please note that the incentives offered by TopCity-1 are only for Residential and Mini-Commercial in Sector A, B, C ,D & I(partial Possession); and the offer will expire on April 30, 2021.Note: The allotters must have to start construction within 02-months from the date of this offer otherwise, they will have to pay all the waived-off amounts.]]></string>
+    <string name="previous"><u>Previous</u></string>
+    <string name="next"><u>Next</u></string>
+    <string name="block">Block</string>
+    <string name="plot_no">Plot No</string>
+    <string name="f_new">F New</string>
+    <string name="_341">341</string>
+    <string name="registration_number">Registration Number</string>
+    <string name="tc_250_1647_t">TC-250-1647/T</string>
+    <string name="property_type">Property Type</string>
+    <string name="location_details">Location Details</string>
+    <string name="ownership">Ownership</string>
+    <string name="muhammad_talha_bin_ali">Muhammad Talha Bin ali</string>
+    <string name="current_address">Current Address</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="rs">Rs</string>
+    <string name="_925_000">925,000</string>
+    <string name="installment_payable">Installment payable</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="current_outstanding">Current Outstanding</string>
+    <string name="surcharge_payable">Surcharge Payable</string>
+    <string name="surcharge_paid">Surcharge Paid</string>
+    <string name="surcharge_waived">Surcharge Waived</string>
+    <string name="surcharge_balance">Surcharge balance</string>
+    <string name="net_outstanding">Net Outstanding</string>
+    <string name="gross_payable">Gross Payable</string>
+    <string name="shared_with">Shared With</string>
+    <string name="_2_users">2 Users</string>
+    <string name="view_details">View Details</string>
+    <string name="you_dream_it">You Dream it</string>
+    <string name="residency">Residency</string>
+    <string name="we_built_it">We built it</string>
+    <string name="community_services">Community Services</string>
+    <string name="shared_accounts">Shared Accounts</string>
+    <string name="add_a_new_user">+ Add a New User</string>
+    <string name="create_a_shared_account">Create A Shared Account</string>
+    <string name="create_accounts">Create Accounts</string>
+    <string name="share_your_property">Share Your Property</string>
+    <string name="enter_new_user_details">Enter New User Details</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="share">Share</string>
+    <string name="your_account_sharing_invitation_has_been_sent_successfully">Your Account Sharing Invitation Has Been Sent Successfully</string>
+    <string name="done">Done</string>
+    <string name="accounts">Accounts</string>
+    <string name="_1">+1</string>
+    <string name="person_sign">%</string>
+    <string name="total_paid">Total Paid</string>
+    <string name="no_property_found">No Property Found</string>
+    <string name="your_property_is_upto_the_mark">Your property is upto the mark</string>
+    <string name="no_news_and_announcements">No News and Announcements</string>
+    <string name="no_events_found">There are no upcoming Events</string>
+    <string name="detail_view">Detailed View</string>
+    <string name="smart_view">Smart View</string>
+    <string name="complaints">Complaints</string>
+    <string name="no_sub_features_available">No Sub Features Available</string>
+    <string name="comming_soon">Comming Soon</string>
+    <string name="_7_days_ago">7 days ago</string>
+    <string name="water_complaint">Water Complaint</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="your_complaint_has_been_withdraw">Your Complaint Has Been Withdraw</string>
+    <string name="chose_the_category_under_which_your_complaint_falls">Chose the category under which your complaint falls.</string>
+    <string name="shared_property">Shared Property</string>
+    <string name="property_id">Property ID</string>
+    <string name="account_detail">Account Detail</string>
+    <string name="user_type">User Type</string>
+    <string name="remove_this_user">Remove This User</string>
+    <string name="you_have_successfully_removed_this_user">You have Successfully removed this user</string>
+    <string name="topcity_1">TopCity-1</string>
+    <string name="_324_2324311">324-2324311</string>
+    <string name="_92">+92</string>
+    <string name="chose_the_catagory_under_which_your_complaint_falls">Chose the Catagory under which your complaint falls.</string>
+    <string name="tell_us_your_problem">Tell us your Problem</string>
+    <string name="add_details">Add Details</string>
+    <string name="your_message">Your Message here..</string>
+    <string name="attactement">Attachement</string>
+    <string name="submit">Submit</string>
+    <string name="add_photos">Add Photos</string>
+    <string name="no_recently_complaint">No Recently Complaint</string>
+    <string name="contact_detail">Contact Detail</string>
+    <string name="for_lodge">For lodge</string>
+    <string name="complaints_blue"><u>Complaints.</u></string>
+    <string name="site_office">Site Office</string>
+    <string name="google_maps_key">AIzaSyBY3c7RFvwzs06juEg0nzIU7PVERTIV3U8</string>
+    <string name="google_maps_api_key">AIzaSyA4z1nMNMtAwP47zWC0Xd7_gt67A3EPCMI</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="tagline_goes_here">Tagline Goes Here!</string>
+    <string name="your_message_has_been_sent_successfully_our_team_will_contact_you_shortly">Your Message Has Been Sent Successfully Our Team Will Contact You Shortly</string>
+    <string name="development">Development</string>
+    <string name="payment_text">Any person intending to directly deposit any installment/payment in TopCity-1 account is required to follow the below procedure: \n  1:  Online payment by mobile application or internet banking \n 2: Cross Banking Instrument. \n 3: Proceed to deposit the amount in TopCity-1 Bank Account \n</string>
+    <string name="payment_detail">Payment Detail</string>
+    <string name="bank">Bank</string>
+    <string name="bank_of_punjab">BANK OF PUNJAB</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="bop_0283_g_11_markaz_islamabad">BOP-0283 G-11 MARKAZ, ISLAMABAD</string>
+    <string name="title_of_account">Title Of Account</string>
+    <string name="dynast_associates_topcity_1">DYNAST ASSOCIATES (TOPCITY-1)</string>
+    <string name="account">Account #</string>
+    <string name="_6010061488300017">6010061488300017</string>
+    <string name="iban">IBAN</string>
+    <string name="pk34bpun6010061488300017">PK34BPUN6010061488300017</string>
+    <string name="currency_code">Currency Code</string>
+    <string name="pkr">PKR</string>
+    <string name="_1_fill_the_online_form_available_at_topcity_1_website_direct_link_is_also_copied_below">1: Fill the online Form available at TopCity-1 website. Direct link is also copied below:</string>
+    <string name="online_payment_receipt">Online Payment Receipt</string>
+    <string name="_3_the_form_filled_by_any_allot_tee_will_be_automatically_sent_to_a_dedicated_finance_email_4_upon_clearing_of_the_relevant_instrument_finance_department_will_update_the_relevant_account_statement_and_will_share_the_same_with_record_section_for_physical_file_updation_relevant_allot_tee_for_acknowledgement">3: The Form filled by any allot tee will be automatically sent to a dedicated finance email. \n \n 4: Upon clearing of the relevant instrument, finance department will update the relevant account statement and will share the same with: \n - Record Section for physical file Updation</string>
+    <string name="payment_receipt">Payment Receipt</string>
+    <string name="token_advance">Token / Advance <font color='#FF0000'>*</font></string>
+    <string name="registration_no">Registration-No</string>
+    <string name="registration_no1">Registration-No <font color='#FF0000'>*</font></string>
+    <string name="plot_size">Plot-Size</string>
+    <string name="typeofplot">Type of Plot</string>
+    <string name="rupee">Rupees</string>
+    <string name="received_with_thanksfrom_mr_mrs_ms">Received with thanks from Mr./Mrs./Ms.</string>
+    <string name="plot">Plot</string>
+    <string name="transactionIDBankReceiptNumber">Transaction ID/Bank Receipt Number <font color='#FF0000'>*</font></string>
+    <string name="amountInWords">Amount In Words</string>
+    <string name="cnic">CNIC</string>
+    <string name="cnic_re">CNIC <font color='#FF0000'>*</font></string>
+    <string name="download_forms">Download Forms</string>
+    <string name="procedures">Procedure</string>
+    <string name="transfer">Transfer</string>
+    <string name="following_are_the_important_documents_required_from_seller_and_buyer_purchase_to_process_transfer_of_commercial_and_residential_plots_seller_and_buyer_has_to_be_presented_at_transfer_office_to_complete_this_process">Following are the important documents required from Seller and Buyer/Purchase to process transfer of commercial and residential plots. Seller and Buyer has to be presented at transfer office to complete this process.</string>
+    <string name="regular_transfer">Regular Transfer</string>
+    <string name="customer_type_1">Customer Type 1 :</string>
+    <string name="customer_type_2">Customer Type 2 :</string>
+    <string name="seller">Seller</string>
+    <string name="required_documents">Required Documents</string>
+    <string name="account_statement_is_the_first_step_for_transfer_in_which_the_seller_has_to_clear_his_all_outstanding_objections_and_dues_before_start_of_regular_transfer_process_of_plot">Account Statement is the first step for transfer in which the seller has to clear his all outstanding objections and dues before start of regular transfer process of plot.</string>
+    <string name="trasfer_bullet_text1"><font color='#004281'>\u25CF</font>  Seller Application Form (Available at Head office, Transfer Office &amp; Authorized Dealers). \n \n<font color='#004281'>\u25CF</font>  Seller Affidavit (Minimum Rs.50 Stamp Paper). \n \n<font color='#004281'>\u25CF</font>  Previous Stamp Duty Collection (If Applicable). \n \n<font color='#004281'>\u25CF</font>  Advance Income Tax (236-C– FBR) to be paid by seller, if transfer is within Four years of purchase (Filer: 1% , Non Filer: 2% of FBR or Sale Agreement Value whichever is higher) \n \n<font color='#004281'>\u25CF</font>  Original Allotment Letter (To be withdrawal) \n \n<font color='#004281'>\u25CF</font>  Original Computerized CNIC &amp; Signature Verification. \n \n<font color='#004281'>\u25CF</font>  Seller must be present at transfer office for the completion of transfer process </string>
+    <string name="purchaser_text"><font color='#004281'>\u25CF</font>  Purchaser Application Form (Available at Head office, Transfer Office &amp; Authorized Dealers). \n \n<font color='#004281'>\u25CF</font>  Latest passport size photograph (2-required). \n \n<font color='#004281'>\u25CF</font>  Purchaser Undertaking (Minimum Rs.50 Stamp Paper). \n \n<font color='#004281'>\u25CF</font>  Stamp Duty Collection (1% of DC value or Sales Agreement Value whichever is higher) to be paid by the purchaser in Bank of Punjab- Rawalpindi (PRA). \n \n<font color='#004281'>\u25CF</font>  Advance Income Tax (236k – FBR) to be paid by purchaser (Filer: 1%, Non Filer: 2% of FBR Prescribed Value or Sale Agreement Value whichever is higher). \n \n<font color='#004281'>\u25CF</font>  Sale Agreement (Under Section 5cc Rs.1,200/- Stamp Paper) [Format Available at, Transfer Office &amp; Authorized Dealers]. </string>
+
+    <string name="purchaser">Purchaser</string>
+    <string name="processing_fee">Processing Fee</string>
+    <string name="processing_fee_will_be_paid_by_purchaser_as_prescribed_by_company_policy_as_per_the_size_and_category_of_the_property">Processing fee will be paid by purchaser as prescribed by company policy as per the size and category of the property.</string>
+    <string name="allotment">Allotment</string>
+    <string name="new_allotment_letter">New Allotment Letter</string>
+    <string name="after_all_the_aforementioned_protocols_are_followed_the_new_allottee_and_or_customer_would_be_notified_via_sms_and_or_call_to_collect_their_transfer_letter_from_the_transfer_office_of_topcity_1_site_office">After all the aforementioned protocols are followed, the new allottee and/ or customer would be notified via SMS and/or Call to collect their Transfer letter from the Transfer Office of TopCity-1 site office.</string>
+    <string name="new_transfer_letter_issuance">New Transfer Letter Issuance</string>
+    <string name="procedure_of_booking_sales_of_new_plots_n_residential_commercial">Procedure of Booking/Sales of New plots \n<br> (Residential &amp;  Commercial)</br></string>
+    <string name="topcity_1_offers_residential_and_commercial_plots_of_different_categories_and_sizes_to_general_public_for_sale_following_are_the_important_documents_which_required_from_purchaser_for_new_sale_booking_of_plots_there_are_two_type_of_purchasers_which_are_also_mentioned_below">TopCity-1 offers residential and commercial plots of different categories and sizes to general public for sale. Following are the important documents which required from purchaser for new sale/booking of plots. There are two type of purchasers which are also mentioned below:</string>
+    <string name="documents_required_for_individual_sales">Documents Required for individual Sales:</string>
+    <string name="allotment_text1"><font color='#004281'>\u25CF</font>  Valid CNIC Copy of Purchaser and Nominees.  \n \n<font color='#004281'>\u25CF</font>  Passport Size Pictures (2) purchaser.  \n \n<font color='#004281'>\u25CF</font>  Signed and thumb impression on Application form (TopCity-1) by the purchaser.  \n \n<font color='#004281'>\u25CF</font>  Application Form can be obtain from TopCity-1 Offices and from its authorized dealers.  \n \n<font color='#004281'>\u25CF</font>  Submission of Payment receipt, Pay order or Bank Draft or online transaction.</string>
+    <string name="steps_to_follow">Steps to follow</string>
+    <string name="allotment_text2"><font color='#004281'>\u25CF</font>  Request required for booking/purchase of plot on Company’s Letter Head.  \n \n<font color='#004281'>\u25CF</font>  Memorandum of Article required.  \n \n<font color='#004281'>\u25CF</font>  Valid CNIC copy of all members.  \n \n<font color='#004281'>\u25CF</font>  Company Registration Certificate Required.  \n \n<font color='#004281'>\u25CF</font>  Company NTN Required.</string>
+    <string name="allotment_text3"><font color='#004281'>\u25CF</font>  Visit the head office for the selection prior information.  \n \n<font color='#004281'>\u25CF</font>  Fill the form.  \n \n<font color='#004281'>\u25CF</font>  Submit the required documents.</string>
+    <string name="possession">Possession</string>
+    <string name="documents_required">Documents Required</string>
+    <string name="possession_text1"><font color='#004281'>\u25CF</font>  Signed Application \n \n<font color='#004281'>\u25CF</font>  Undertaking (If required) \n \n<font color='#004281'>\u25CF</font>  CNIC Copy \n \n<font color='#004281'>\u25CF</font>  Copy of Allotment Letter.</string>
+    <string name="steps_to_follows">Steps To Follow</string>
+    <string name="possession_text2"><font color='#004281'>\u25CF</font>  Submit the signed application and required documents to Possession Department Head Office Possession Office will provide Account statement. Please download the possession application form Here or from the Download section. \n \n<font color='#004281'>\u25CF</font>  Clear all dues. (If Required) \n \n<font color='#004281'>\u25CF</font>  Clear all extra charges. (If any) \n \n<font color='#004281'>\u25CF</font>  Receive the possession letter in person or with undertaking in time given by possession officer.</string>
+    <string name="water_connection">Water Connection</string>
+    <string name="sop_for_providing_water">Sop For Providing Water</string>
+    <string name="supply_connection">Supply Connection</string>
+    <string name="waterConnection_text1"><font color='#004281'>\u25CF</font>  Submission of connection application to the water supply department. \n \n<font color='#004281'>\u25CF</font>  Supply of water connection accessories to water supply department by the client.(Within a week) \n \n<font color='#004281'>\u25CF</font>  Providing of connection after receiving all the accessories.(2 Days) Water supply connection is free of cost. \n \n<font color='#004281'>\u25CF</font>  Please download the water connection form Here or form \n \n<font color='#004281'>\u25CF</font>  Download section.</string>
+
+    <string name="q1">
+       Q1. How to see Property Details?
+    </string>
+    <string name="q2">
+     Q2. How to see Property Payment details?
+    </string>
+    <string name="q3">
+   Q3. How to create Shared User (Family Members or Tenants)?
+    </string>
+    <string name="q4">
+Q4. How to create the complaint?
+    </string>
+    <string name="q5">
+Q5. How to check complaint status?
+    </string>
+    <string name="q6">
+Q6. How to remove Shared user(Family members or Tenants)?
+    </string>
+    <string name="q7">
+Q7. How to update my profile?
+    </string>
+    <string name="q8">
+Q8. How to see the Notifications?
+    </string>
+    <string name="q9">
+Q9. If you Forgot Password?
+    </string>
+    <string name="a1">
+<b>Step 1:</b> Signup on TopCity-1 Mobile App. \n \n
+<b>Step 2:</b> Click on “My Properties” of the home.
+
+    </string>
+    <string name="a2">
+<b>Step 1:</b> Signup on TopCity-1 Mobile App. \n \n
+<b>Step 2:</b> Click on “My Properties” of the home. \n \n
+<b>Step 3:</b> Scroll down the screen, you will see the payment details in a detailed view and also in a smart view.
+
+    </string>
+    <string name="a3">
+We have three methods for adding the shared user to the property. \n \n
+<b>Method 1:</b> \n \n
+<b>Step 1:</b> Signup on TopCity-1 Mobile App. \n \n
+<b>Step 2:</b> Click on the User icon then click on Create Shared Account button. \n \n
+<b>Step 3:</b> Click on Add a New User button. \n \n
+<b>Step 4:</b> Select your property. \n \n
+<b>Step 5:</b> Enter new user details. \n \n
+<b>Step 6:</b> Click Share Now. \n \n
+
+<b>Method 2:</b>  \n \n
+<b>Step 1:</b> Signup on TopCity-1 Mobile App. \n \n
+<b>Step 2:</b> Click on Accounts in the bottom navbar. \n \n
+<b>Step 3:</b> Click on Add a new User. \n \n
+<b>Step 4:</b> Select your property. \n \n
+<b>Step 5:</b> Enter new user details. \n \n
+<b>Step 6:</b> Click Share Now.
+
+    </string>
+    <string name="a4">
+<b>Step 1:</b> Signup on TopCity-1 Mobile App. \n \n
+<b>Step 2:</b> Click on Service Desk in the bottom navbar. \n \n
+<b>Step 3:</b> Click on Complaint. \n \n
+<b>Step 4:</b> Choose the category under which your complaint falls. \n \n
+<b>Step 5:</b> Select your property. \n \n
+<b>Step 6:</b> Tell us your problem. \n \n
+<b>Step 7:</b> Click Submit. \n \n
+
+    </string>
+    <string name="a5">
+<b>Step 1:</b> Signup on TopCity-1 Mobile App. \n \n
+<b>Step 2:</b> Scroll down the screen of the home. \n \n
+<b>Step 3:</b> Click on the complaint. \n \n
+    </string>
+    <string name="a6">
+We have two methods for removing the shared user from the property. \n \n
+<b>Method 1:</b> \n \n
+<b>Step 1:</b> Click on “My Properties” of the home. \n \n
+<b>Step 2:</b> Scroll down the screen. \n \n
+<b>Step 3:</b> Click on View Details button. \n \n
+<b>Step 4:</b> : Click on the shared user which you want to remove from your property. \n \n
+<b>Step 5:</b> Scroll down the screen. \n \n
+<b>Step 6:</b> Click Remove this user. \n \n
+<b>Method 2:</b> /n
+<b>Step 1:</b> Click on Accounts in the bottom navbar. \n \n
+<b>Step 2:</b> Click on the shared user which you want to remove from your property. \n \n
+<b>Step 3:</b> Scroll down the screen.\n \n
+<b>Step 4:</b> Click Remove this user. \n \n
+<b>Note:</b> If you are Property Owner, then you can remove the shared user(Family members or tenants) other than you will not be able to remove the shared user or Add the shared user to the property.
+
+    </string>
+    <string name="a7">
+<b>Step 1:</b> Signup on TopCity-1 Mobile App. \n \n
+<b>Step 2:</b> Click on the user icon. \n \n
+<b>Step 3:</b> Click on Edit details button. \n \n
+<b>Step 4:</b> Click Update.
+    </string>
+    <string name="a8">
+<b>Step 1:</b> Signup on TopCity-1 Mobile App. \n \n
+<b>Step 2:</b> Click on the notification bell icon. \n \n
+<b>Note:</b> You will see the notifications in the list.
+
+    </string>
+    <string name="a9">
+<b>Step 1:</b> Click on Forget Password on the login screen. \n \n
+<b>Step 2:</b> Enter your phone number or Email. \n \n
+<b>Step 3:</b> Click on Get OTP. \n \n
+<b>Step 4:</b> Click Verify. \n \n
+<b>Step 5:</b> Enter new password and confirm password. \n \n
+<b>Step 6:</b> Click Update.
+    </string>
+
+    <string name="faqs">FAQs</string>
+    <string name="title_activity_guest_dasboard">GuestDasboard</string>
+    <string name="announcement">Announcement</string>
+    <string name="list_of_recently_added_complaints">List of Recently added Complaints</string>
+    <string name="development_activities">Development Activities</string>
+    <string name="_2020_2021_topcity_1_all_rights_reserved">© 2021-2022 Topcity-1. \n All Rights Reserved</string>
+    <string name="notification">Notification</string>
+    <string name="no_notification_yet">No Notification yet</string>
+    <string name="thank_you_for_letting_us_know">Thank you for letting us know</string>
+    <string name="_23">0</string>
+    <string name="fingerprint_enabled">Fingerprint Enabled</string>
+    <string name="payments_detail">Payments Detail</string>
+    <string name="downloads">Downloads</string>
+    <string name="contact">Contact</string>
+    <string name="please_own_property_first">please own property first</string>
+    <string name="hash">********</string>
+    <string name="complaint_dots">Complaint :</string>
+    <string name="no_shared_accounts">No Shared Accounts</string>
+    <string name="top_city_version">V 1.0</string>
+    <string name="complaint_address">Complaint Address :</string>
+    <string name="map_key">AIzaSyClEuJJP98wKxxExqkWmDI-ZFxOZgBbn88</string>
+    <string name="management_dashboard">Management Dashboard</string>
+    <string name="token">Token</string>
+    <string name="type_of_plot_ex_corner_side">Type of Plot - Ex Corner side</string>
+    <string name="transcation_id">Transcation ID</string>
+    <string name="total_no_of_users">Total No. of Users</string>
+    <string name="total_no_of_complaints">Total No. of Complaints</string>
+    <string name="resloved">Resloved</string>
+    <string name="pending">Pending</string>
+    <string name="delay">Delay</string>
+    <string name="_200">200</string>
+    <string name="maintance">Maintance</string>
+
+
+    <!--     dashboard management item text-->
+    <string name="all">All</string>
+    <string name="General">General</string>
+    <string name="Electricity">Electricity</string>
+    <string name="Maintenance">Maintenance</string>
+    <string name="Water">Water</string>
+    <string name="complaints_categories_Stats">Complaints Categories Stats</string>
+    <string name="today">Today</string>
+    <string name="of_complaints"># of Complaints</string>
+    <string name="week">This Week</string>
+    <string name="month">This Month</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="enter_your_cnic">Enter Your CNIC</string>
+    <string name="details">Details</string>
+    <string name="no_complaint_history">No complaint history</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="downtown_office">Downtown Office</string>
+    <string name="topcity1_location">TopCity1 Location</string>
+    <string name="these_fields_are_required"><font color='#FF0000'>* </font> These Fields are required.</string>
+    <string name="address">Address</string>
+    <string name="you_are_not_authorized_to_view_this_page">Sorry, you cannot view this page.</string>
+    <string name="complaint_remarks">Complaint Remarks:</string>
+    <string name="images">Images</string>
+    <string name="video">Video</string>
+    <string name="images_limited_text">You cannot attach more than 4 images.</string>
+
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Development Activities</item>
+        <item>Payment Detail</item>
+        <item>Procedure</item>
+        <item>Shared Account</item>
+        <item>Downloads</item>
+        <item>FAQS</item>
+        <item>Contact</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>/ic_launcher_background</item>
+        <item>@drawable/ic_launcher_background</item>
+        <item>@drawable/ic_launcher_background</item>
+        <item>@drawable/ic_launcher_background</item>
+        <item>@drawable/ic_launcher_background</item>
+    </array>
+</resources>

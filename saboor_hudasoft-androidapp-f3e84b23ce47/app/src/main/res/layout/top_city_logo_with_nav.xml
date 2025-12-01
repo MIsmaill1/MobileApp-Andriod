@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_blue_bg"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/back_to_login2"
+        android:layout_width="@dimen/_40sdp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_height="@dimen/_30sdp">
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@mipmap/back_arrow_icon">
+
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_height="45dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:src="@mipmap/top_city">
+            </ImageView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:theme="@style/ToolbarColoredBackArrow"
+        app:navigationIcon="@mipmap/menu"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/_17sdp"
+            android:src="@mipmap/menu_icon">
+        </ImageView>
+    </androidx.appcompat.widget.Toolbar>
+        <ImageView
+            android:id="@+id/nav_close"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_17sdp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/_17sdp"
+            android:src="@mipmap/menu_icon">
+        </ImageView>
+    </LinearLayout>
+
+</FrameLayout>

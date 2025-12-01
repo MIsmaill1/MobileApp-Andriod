@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UserSharedAccountDetail">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:orientation="vertical"
+                                android:backgroundTint="@color/white"
+                                android:background="@drawable/rounded_bottom_radius_box">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:id="@+id/shared_Account_detail_image"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:visibility="visible"
+                                    android:src="@mipmap/image"
+                                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay_card_custom_corners">
+                                </com.google.android.material.imageview.ShapeableImageView>
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@color/image_overlay_color"
+                                    android:visibility="visible"
+                                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay_card_custom_corners"></com.google.android.material.imageview.ShapeableImageView>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:orientation="vertical"
+                                android:backgroundTint="@color/white"
+                                android:background="@drawable/rounded_bottom_radius_box">
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="@string/account_detail"
+                                android:fontFamily="@font/sweetsanspro_bold"
+                                android:textSize="@dimen/_18sdp">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/_15sdp"
+                                android:paddingTop="@dimen/_15sdp"
+                                android:paddingBottom="@dimen/_15sdp"
+                                android:paddingRight="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/shadow1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/_30sdp"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:paddingBottom="@dimen/_10sdp"
+                                    android:background="@drawable/shadow1"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:src="@mipmap/user_icon">
+                                    </ImageView>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/name">
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/Shared_account_detail_name"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingTop="3dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:textSize="@dimen/_11sdp"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/location_details">
+                                        </TextView>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/_30sdp"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:paddingBottom="@dimen/_10sdp"
+                                    android:background="@drawable/shadow1"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:src="@mipmap/contact_blue_icon">
+                                    </ImageView>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/cnic_number">
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/Shared_account_detail_cnic"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingTop="3dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:textSize="@dimen/_11sdp"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/location_details">
+                                        </TextView>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/_30sdp"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:paddingBottom="@dimen/_10sdp"
+                                    android:background="@drawable/shadow1"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:src="@mipmap/email_icon1">
+                                    </ImageView>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/user_type">
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/Shared_account_detail_userType"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingTop="3dp"
+                                            android:textSize="@dimen/_11sdp"
+                                            android:layout_marginEnd="5dp"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/location_details">
+                                        </TextView>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/_30sdp"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:paddingBottom="@dimen/_10sdp"
+                                    android:background="@drawable/shadow1"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:src="@mipmap/call_blue_icon">
+                                    </ImageView>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/phone">
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/Shared_account_detail_phone"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingTop="3dp"
+                                            android:textSize="@dimen/_11sdp"
+                                            android:layout_marginEnd="5dp"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/location_details">
+                                        </TextView>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="@dimen/_30sdp"
+                                    android:paddingTop="@dimen/_10sdp"
+                                    android:layout_marginTop="@dimen/_10sdp"
+                                    android:paddingBottom="@dimen/_10sdp"
+                                    android:background="@drawable/shadow1"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:src="@mipmap/email_icon1">
+                                    </ImageView>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="@dimen/_10sdp"
+                                        android:layout_gravity="center"
+                                        android:orientation="vertical">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/email">
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/Shared_account_detail_email"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingTop="3dp"
+                                            android:textSize="@dimen/_11sdp"
+                                            android:layout_marginEnd="5dp"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/location_details">
+                                        </TextView>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:layout_marginStart="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:text="@string/shared_property"
+                                    android:fontFamily="@font/sweetsanspro_bold"
+                                    android:textSize="@dimen/_18sdp">
+                                </TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_13sdp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/location_details">
+                                </TextView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingRight="25dp"
+                                android:paddingBottom="20dp"
+                                android:paddingLeft="30dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginEnd="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/bg_light_blue_color"
+                                        android:fontFamily="@font/sweetsanspro_bold"
+                                        android:text="@string/block">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/shared_Account_detail_block"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_13sdp"
+                                        android:textColor="@color/black"
+                                        android:layout_marginBottom="20dp"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:text="@string/f_new">
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/bg_light_blue_color"
+                                        android:fontFamily="@font/sweetsanspro_bold"
+                                        android:text="@string/property_type">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/shared_Account_detail_propertyType"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_13sdp"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+
+                                        android:text="@string/f_new">
+                                    </TextView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/bg_light_blue_color"
+                                        android:fontFamily="@font/sweetsanspro_bold"
+                                        android:text="@string/plot_no">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/shared_Account_detail_plot"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_13sdp"
+                                        android:layout_marginBottom="20dp"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:text="@string/_341">
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/bg_light_blue_color"
+                                        android:fontFamily="@font/sweetsanspro_bold"
+                                        android:text="@string/property_id">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/shared_Account_detail_propertyid"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_13sdp"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:text="@string/tc_250_1647_t">
+                                    </TextView>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/shared_Account_detail_propertyImagesList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </androidx.recyclerview.widget.RecyclerView>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="vertical">
+                            <include
+                                android:visibility="invisible"
+                                layout="@layout/top_city_logo_with_border">
+                            </include>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:id="@+id/shared_Account_detail_back"
+                                    android:layout_width="@dimen/_40sdp"
+                                    android:layout_marginStart="25dp"
+                                    android:layout_height="@dimen/_30sdp">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+
+                                        android:src="@mipmap/blue_back_left_arrow_icon">
+                                    </ImageView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="end"
+                                    android:layout_weight="1">
+                                    <TextView
+                                        android:id="@+id/shared_Account_detail_active_status"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:drawableLeft="@drawable/circle_active_status"
+                                        android:drawablePadding="10dp"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:text="@string/active"
+                                        android:textColor="@color/dark_green"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/sweetsanspro_medium"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="150dp"
+                                android:visibility="gone"
+                                android:text="@string/b_01_block_7_street_2_in_topcity1"
+                                android:textColor="@color/white">
+                            </TextView>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/complaints"
+                            android:padding="10dp"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/sweetsanspro_bold"
+                            android:textSize="@dimen/_18sdp">
+                        </TextView>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/shared_Account_detail_ComplaintsList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_15sdp">
+                        </androidx.recyclerview.widget.RecyclerView>
+                        <LinearLayout
+                            android:id="@+id/no_complaint_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/no_complaint_history"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black">
+                            </TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="@dimen/_30sdp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:id="@+id/shared_Account_detail_removeuser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:paddingRight="@dimen/_15sdp"
+                            android:layout_marginTop="7dp"
+                            android:backgroundTint="@color/red"
+                            android:background="@drawable/blue_button_rounded"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:text="@string/remove_this_user"
+                                android:textAllCaps="false"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_11sdp">
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+        <include
+            android:visibility="visible"
+            layout="@layout/top_city_logo_with_border">
+        </include>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

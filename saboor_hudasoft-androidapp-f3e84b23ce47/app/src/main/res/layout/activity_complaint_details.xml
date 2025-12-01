@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ComplaintDetails">
+
+
+        <LinearLayout
+            android:id="@+id/community_services_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/top_city_logo_with_border">
+                </include>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:id="@+id/back_to_Complaint_detail"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_30sdp">
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/blue_back_left_arrow_icon">
+
+                                </ImageView>
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:id="@+id/community_services_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:visibility="gone"
+                                android:fontFamily="@font/sweetsanspro_bold"
+                                android:text="@string/community_services"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp">
+
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:paddingTop="4dp">
+
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:id="@+id/notification_Complaint_detail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/notification_icon">
+                                </ImageView>
+                                <LinearLayout
+                                    android:id="@+id/notification_Count_bg"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/noti_count_circle"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginStart="@dimen/_13sdp">
+                                    <TextView
+                                        android:id="@+id/notification_Count"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:visibility="visible"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:textSize="@dimen/_8sdp"
+                                        android:text="@string/_23">
+                                    </TextView>
+                                </LinearLayout>
+                            </FrameLayout>
+                            <ImageView
+                                android:id="@+id/user_icon_Complaint_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:src="@mipmap/user_icon">
+                            </ImageView>
+
+                            <LinearLayout
+                                android:id="@+id/signup_btn_Complaint_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:id="@+id/signup_text_Complaint_detail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:gravity="bottom"
+                                    android:text="Signup"
+                                    android:textColor="@color/bg_light_blue_color"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:visibility="gone"></TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:scrollbars="none"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/complaint_Titlename"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_weight="1"
+                                    android:visibility="visible"
+                                    android:fontFamily="@font/sweetsanspro_bold"
+                                    android:text="@string/water"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_18sdp">
+
+                                </TextView>
+                                <LinearLayout
+                                    android:id="@+id/complaint_status_bg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="22dp"
+                                    android:paddingLeft="@dimen/_15sdp"
+                                    android:paddingRight="@dimen/_15sdp"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:background="@color/dark_green">
+                                    <TextView
+                                        android:id="@+id/complaint_status"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:visibility="visible"
+                                        android:layout_gravity="end"
+                                        android:gravity="center"
+                                        android:fontFamily="@font/sweetsanspro_bold"
+                                        android:text="@string/active"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_10sdp">
+
+                                    </TextView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/complaint_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:visibility="visible"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:text="@string/tc_250_1647_t"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp">
+
+                            </TextView>
+                            <TextView
+                                android:id="@+id/complaint_days"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginTop="5dp"
+                                android:visibility="gone"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:text="@string/_7_days_ago"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp">
+
+                            </TextView>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="7dp"
+                                        android:src="@mipmap/calender">
+                                    </ImageView>
+                                    <TextView
+                                        android:id="@+id/complain_detail_date"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:text="@string/_24_november_2021">
+                                    </TextView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginRight="7dp"
+                                        android:src="@mipmap/clock_icon">
+                                    </ImageView>
+                                    <TextView
+                                        android:id="@+id/complain_detail_time"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:text="@string/_07_03_pm">
+                                    </TextView>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.6"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginTop="@dimen/_20sdp"
+                                        android:visibility="visible"
+                                        android:fontFamily="@font/sweetsanspro_bold"
+                                        android:text="@string/complaint_dots"
+                                        android:textColor="@color/bg_light_blue_color"
+                                        android:textSize="@dimen/_14sdp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:visibility="visible"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:text="@string/muhammad_talha_bin_ali"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_12sdp">
+
+                                    </TextView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginTop="@dimen/_20sdp"
+                                        android:visibility="visible"
+                                        android:fontFamily="@font/sweetsanspro_bold"
+                                        android:text="@string/complaint_address"
+                                        android:textColor="@color/bg_light_blue_color"
+                                        android:textSize="@dimen/_14sdp">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/complaint_address"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:visibility="visible"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:text="@string/b_01_block_7_street_2_in_topcity1"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_12sdp">
+
+                                    </TextView>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/complaint_remarks_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginTop="@dimen/_20sdp"
+                                    android:visibility="visible"
+                                    android:fontFamily="@font/sweetsanspro_bold"
+                                    android:text="@string/complaint_remarks"
+                                    android:textColor="@color/bg_light_blue_color"
+                                    android:textSize="@dimen/_14sdp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/complaint_remarks"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="5dp"
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:visibility="visible"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/muhammad_talha_bin_ali"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp">
+
+                                </TextView>
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/complaint_subject"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:layout_weight="1"
+                                android:visibility="visible"
+                                android:fontFamily="@font/sweetsanspro_bold"
+                                android:text="@string/water_complaint"
+                                android:textColor="@color/bg_light_blue_color"
+                                android:textSize="@dimen/_18sdp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/complaint_descrip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:visibility="visible"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:text="@string/lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_13sdp">
+
+                            </TextView>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/complain_Imagelist"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layout_height="wrap_content">
+                            </androidx.recyclerview.widget.RecyclerView>
+
+                            <LinearLayout
+                                android:id="@+id/complaint_withDraw_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:background="@drawable/button_outline_blue"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingLeft="40dp"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="40dp"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:paddingBottom="1dp"
+                                    android:text="@string/withdraw"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/bg_light_blue_color"
+                                    android:textSize="@dimen/_11sdp">
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sweetsanspro_regular"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="@string/comming_soon">
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

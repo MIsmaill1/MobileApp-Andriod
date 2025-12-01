@@ -1,0 +1,1760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.NewsAnnounceDetail">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_gray_radius_box">
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rounded_gray_radius_box">
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:orientation="vertical"
+                            android:background="@drawable/rounded_bottom_radius_box">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/property_Details_images"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </androidx.recyclerview.widget.RecyclerView>
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/details_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:visibility="gone"
+                                android:src="@mipmap/image"
+                                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay_card_custom_corners">
+                            </com.google.android.material.imageview.ShapeableImageView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:orientation="vertical">
+
+                                    <include
+                                        layout="@layout/top_city_logo_with_border"
+                                        android:visibility="invisible"></include>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:id="@+id/backtodetails"
+                                            android:layout_width="@dimen/_40sdp"
+                                            android:layout_marginStart="20dp"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_height="@dimen/_30sdp">
+                                            <ImageView
+
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+
+                                                android:src="@mipmap/back_arrow_icon">
+
+                                            </ImageView>
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="end"
+                                            android:layout_weight="1"
+                                            android:gravity="end">
+
+                                            <ImageView
+                                                android:id="@+id/addimage"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="25dp"
+                                                android:layout_marginTop="10dp"
+                                                android:src="@mipmap/add_image_icon"
+                                                android:visibility="visible"></ImageView>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <TextView
+                                        android:id="@+id/propertyDetail_Address"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="25dp"
+                                        android:layout_marginTop="150dp"
+                                        android:layout_marginBottom="@dimen/_10sdp"
+                                        android:fontFamily="@font/sweetsanspro_medium"
+                                        android:text="@string/b_01_block_7_street_2_in_topcity1"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_12sdp"></TextView>
+
+                                    <LinearLayout
+                                        android:id="@+id/list_dot"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        android:orientation="horizontal"></LinearLayout>
+
+                                    <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+                                        android:id="@+id/indicato1r"
+                                        android:layout_width="@dimen/_200sdp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginBottom="@dimen/_10sdp"
+                                        android:visibility="gone"
+                                        app:spi_dotSpacing="20dp" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:text="@string/location_details"
+                                    android:padding="10dp"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/sweetsanspro_bold"
+                                    android:textSize="@dimen/_18sdp">
+                                </TextView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="10dp"
+                                android:paddingRight="25dp"
+                                android:paddingBottom="20dp"
+                                android:paddingLeft="30dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginEnd="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/bg_light_blue_color"
+                                        android:fontFamily="@font/sweetsanspro_bold"
+                                        android:text="@string/block">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/property_detail_block"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_13sdp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"
+                                        android:layout_marginBottom="20dp"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:text="@string/f_new">
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/bg_light_blue_color"
+                                        android:fontFamily="@font/sweetsanspro_bold"
+                                        android:text="@string/property_type">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/property_detail_propertyType"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_13sdp"
+                                        android:textStyle="bold"
+
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+
+                                        android:text="@string/f_new">
+                                    </TextView>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/bg_light_blue_color"
+                                        android:fontFamily="@font/sweetsanspro_bold"
+                                        android:text="@string/plot_no">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/property_detail_plot"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_13sdp"
+                                        android:textStyle="bold"
+                                        android:layout_marginBottom="20dp"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:text="@string/_341">
+                                    </TextView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_12sdp"
+                                        android:textColor="@color/bg_light_blue_color"
+                                        android:fontFamily="@font/sweetsanspro_bold"
+                                        android:text="@string/registration_number">
+                                    </TextView>
+                                    <TextView
+                                        android:id="@+id/property_detail_registerNo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/_13sdp"
+                                        android:textStyle="bold"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:text="@string/tc_250_1647_t">
+                                    </TextView>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="@string/ownership"
+                            android:padding="10dp"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/sweetsanspro_bold"
+                            android:textSize="@dimen/_18sdp">
+                        </TextView>
+
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/ownerShip_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </androidx.recyclerview.widget.RecyclerView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:visibility="gone"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_gravity="center|top"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:elevation="12dp"
+                                android:id="@+id/view2"
+                                android:backgroundTint="@color/light_dim_gray"
+                                app:cardCornerRadius="25dp"
+                                android:layout_centerHorizontal="true">
+                                <ImageView
+                                    android:id="@+id/user_image"
+                                    android:layout_height="match_parent"
+                                    android:layout_width="match_parent"
+                                    android:src="@drawable/ic_baseline_person_24"
+                                    android:scaleType="centerCrop"/>
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sweetsanspro_medium"
+                                android:text="@string/name">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/property_detail_userName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:layout_marginBottom="20dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sweetsanspro_light"
+                                android:text="@string/muhammad_talha_bin_ali">
+                            </TextView>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sweetsanspro_medium"
+                                android:text="@string/phone">
+                            </TextView>
+                            <TextView
+                                android:id="@+id/property_detail_userNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_13sdp"
+                                android:layout_marginBottom="20dp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/sweetsanspro_light"
+                                android:text="@string/_987_6543_3211">
+                            </TextView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="@string/current_address"
+                                android:padding="10dp"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/sweetsanspro_bold"
+                                android:textSize="@dimen/_18sdp">
+                            </TextView>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:visibility="gone"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="20dp"
+                            android:paddingLeft="20dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/property_detail_currentAddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_13sdp"
+                                    android:layout_marginBottom="20dp"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/sweetsanspro_light"
+                                    android:text="@string/lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et">
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/isDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:text="@string/payment_details"
+                                    android:padding="10dp"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/sweetsanspro_bold"
+                                    android:textSize="@dimen/_18sdp">
+                                </TextView>
+
+                            </LinearLayout>
+
+                            <!--                        detail and smart view btn-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:gravity="center">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/detailView_btn"
+                                            android:layout_width="142dp"
+                                            android:layout_height="@dimen/_30sdp"
+                                            android:layout_gravity="center"
+                                            android:layout_marginStart="@dimen/_30sdp"
+                                            android:layout_marginEnd="@dimen/_10sdp"
+                                            android:background="@drawable/rounded_blue_button"
+                                            android:fontFamily="@font/sweetsanspro_bold"
+                                            android:gravity="center"
+                                            android:text="@string/detail_view"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_11sdp"></TextView>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center|end"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/smart_view_btn"
+                                            android:layout_width="@dimen/_110sdp"
+                                            android:layout_height="@dimen/_30sdp"
+                                            android:fontFamily="@font/sweetsanspro_bold"
+                                            android:layout_gravity="center|end"
+                                            android:gravity="center"
+                                            android:layout_marginEnd="@dimen/_20sdp"
+                                            android:visibility="visible"
+                                            android:background="@color/white"
+                                            android:text="@string/smart_view"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_11sdp">
+                                        </TextView>
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+
+                            <!--                        Smart View-->
+                            <LinearLayout
+                                android:id="@+id/property_smart_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                               android:visibility="gone"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="10dp"
+                                        android:paddingRight="18dp"
+                                        android:paddingBottom="20dp"
+                                        android:paddingLeft="30dp"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_11sdp"
+                                                android:textColor="@color/black"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/sweetsanspro_regular"
+                                                android:text="@string/total_paid">
+                                            </TextView>
+
+                                            <TextView
+                                                android:id="@+id/property_smart_totalPaid"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_11sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_regular"
+                                                android:text="@string/_25">
+                                            </TextView>
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_11sdp"
+                                                android:textColor="@color/black"
+                                                android:layout_marginEnd="5dp"
+                                                android:fontFamily="@font/sweetsanspro_regular"
+                                                android:text="@string/person_sign">
+                                            </TextView>
+
+
+
+                                        </LinearLayout>
+
+                                        <ProgressBar
+                                            android:progressDrawable="@drawable/progress_smart_view"
+                                            style="?android:attr/progressBarStyleHorizontal"
+                                            android:id="@+id/total_paid_progress"
+                                            android:layout_marginTop="10dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/_10sdp"
+                                            android:max="100"
+                                            tools:progress="25"
+                                            android:progress="20"
+                                            android:indeterminateOnly="false"
+                                            android:layout_gravity="center_horizontal" />
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/property_smart_instal_pay"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/_925_000">
+                                            </TextView>
+
+                                            <TextView
+                                                android:id="@+id/property_smart_totalbal"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/_925_000">
+                                            </TextView>
+
+
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="10dp"
+                                        android:paddingRight="18dp"
+                                        android:paddingBottom="20dp"
+                                        android:paddingLeft="30dp"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:layout_marginEnd="10dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_11sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_regular"
+                                                android:text="@string/current_outstanding">
+                                            </TextView>
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:layout_marginTop="@dimen/_4sdp"
+                                                android:orientation="horizontal">
+                                                <ProgressBar
+                                                    android:progressDrawable="@drawable/progress_smart_view"
+                                                    style="?android:attr/progressBarStyleHorizontal"
+                                                    android:id="@+id/current_outstanding_progress"
+                                                    android:layout_marginTop="@dimen/_1sdp"
+                                                    android:layout_marginEnd="@dimen/_5sdp"
+                                                    android:layout_width="@dimen/_90sdp"
+                                                    android:layout_height="@dimen/_10sdp"
+                                                    android:max="100"
+                                                    tools:progress="25"
+                                                    android:progress="20"
+                                                    android:indeterminateOnly="false"
+                                                    android:layout_gravity="center" />
+                                                <TextView
+                                                    android:id="@+id/property_smart_Current_Outstanding"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:gravity="center"
+                                                    android:layout_gravity="center"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/_25">
+                                                </TextView>
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/person_sign">
+                                                </TextView>
+
+                                            </LinearLayout>
+
+
+
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:layout_marginEnd="@dimen/_10sdp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_11sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_regular"
+                                                android:text="@string/surcharge_paid">
+                                            </TextView>
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_4sdp"
+                                                android:orientation="horizontal">
+                                                <ProgressBar
+                                                    android:progressDrawable="@drawable/progress_smart_view"
+                                                    style="?android:attr/progressBarStyleHorizontal"
+                                                    android:id="@+id/SurchargePaid_progress"
+                                                    android:layout_marginTop="@dimen/_1sdp"
+                                                    android:layout_marginEnd="@dimen/_5sdp"
+                                                    android:layout_width="@dimen/_90sdp"
+                                                    android:layout_height="@dimen/_10sdp"
+                                                    android:max="100"
+                                                    tools:progress="25"
+                                                    android:progress="20"
+                                                    android:indeterminateOnly="false"
+                                                    android:layout_gravity="center" />
+                                                <TextView
+                                                    android:id="@+id/property_smart_SurchargePaid"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/_25">
+                                                </TextView>
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/person_sign">
+                                                </TextView>
+                                            </LinearLayout>
+
+
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:visibility="gone"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:orientation="vertical">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_11sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_regular"
+                                                android:text="@string/surcharge_payable">
+                                            </TextView>
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_4sdp"
+                                                android:orientation="horizontal">
+                                                <ProgressBar
+                                                    android:progressDrawable="@drawable/progress_smart_view"
+                                                    style="?android:attr/progressBarStyleHorizontal"
+                                                    android:id="@+id/SurchargePayable_progress"
+                                                    android:layout_marginTop="@dimen/_1sdp"
+                                                    android:layout_marginEnd="@dimen/_5sdp"
+                                                    android:layout_width="@dimen/_90sdp"
+                                                    android:layout_height="@dimen/_10sdp"
+                                                    android:max="100"
+                                                    tools:progress="25"
+                                                    android:progress="20"
+                                                    android:indeterminateOnly="false"
+                                                    android:layout_gravity="center" />
+                                                <TextView
+                                                    android:id="@+id/property_smart_SurchargePayable"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/_25">
+                                                </TextView>
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/person_sign">
+                                                </TextView>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="10dp"
+                                        android:paddingRight="18dp"
+                                        android:paddingBottom="20dp"
+                                        android:paddingLeft="30dp"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_11sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_regular"
+                                                android:text="@string/surcharge_waived">
+                                            </TextView>
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_4sdp"
+                                                android:orientation="horizontal">
+                                                <ProgressBar
+                                                    android:progressDrawable="@drawable/progress_smart_view"
+                                                    style="?android:attr/progressBarStyleHorizontal"
+                                                    android:id="@+id/SurchargeWaived_progress"
+                                                    android:layout_marginTop="@dimen/_1sdp"
+                                                    android:layout_marginEnd="@dimen/_5sdp"
+                                                    android:layout_width="@dimen/_90sdp"
+                                                    android:layout_height="@dimen/_10sdp"
+                                                    android:max="100"
+                                                    tools:progress="25"
+                                                    android:progress="20"
+                                                    android:indeterminateOnly="false"
+                                                    android:layout_gravity="center" />
+                                                <TextView
+                                                    android:id="@+id/property_smart_SurchargeWaived"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/_25">
+
+                                                </TextView>
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/person_sign">
+                                                </TextView>
+                                            </LinearLayout>
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:layout_marginEnd="10sp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_11sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_regular"
+                                                android:text="@string/surcharge_balance">
+                                            </TextView>
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_4sdp"
+                                                android:orientation="horizontal">
+                                                <ProgressBar
+                                                    android:progressDrawable="@drawable/progress_smart_view"
+                                                    style="?android:attr/progressBarStyleHorizontal"
+                                                    android:id="@+id/Surchargebalance_progress"
+                                                    android:layout_marginTop="@dimen/_1sdp"
+                                                    android:layout_marginEnd="@dimen/_5sdp"
+                                                    android:layout_width="@dimen/_90sdp"
+                                                    android:layout_height="@dimen/_10sdp"
+                                                    android:max="100"
+                                                    tools:progress="25"
+                                                    android:progress="20"
+                                                    android:indeterminateOnly="false"
+                                                    android:layout_gravity="center" />
+                                                <TextView
+                                                    android:id="@+id/property_smart_Surchargebalance"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/_25">
+                                                </TextView>
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/person_sign">
+                                                </TextView>
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="10dp"
+                                        android:paddingRight="18dp"
+                                        android:paddingBottom="20dp"
+                                        android:paddingLeft="30dp"
+                                        android:visibility="gone"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:visibility="gone"
+                                            android:orientation="vertical">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_11sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_regular"
+                                                android:text="@string/net_outstanding">
+                                            </TextView>
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_4sdp"
+                                                android:orientation="horizontal">
+                                                <ProgressBar
+                                                    android:progressDrawable="@drawable/progress_smart_view"
+                                                    style="?android:attr/progressBarStyleHorizontal"
+                                                    android:id="@+id/NetOutstanding_progress"
+                                                    android:layout_marginTop="@dimen/_1sdp"
+                                                    android:layout_marginEnd="@dimen/_5sdp"
+                                                    android:layout_width="@dimen/_90sdp"
+                                                    android:layout_height="@dimen/_10sdp"
+                                                    android:max="100"
+                                                    tools:progress="25"
+                                                    android:progress="20"
+                                                    android:indeterminateOnly="false"
+                                                    android:layout_gravity="center" />
+                                                <TextView
+                                                    android:id="@+id/property_smart_NetOutstanding"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/_25">
+                                                </TextView>
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/person_sign">
+                                                </TextView>
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:paddingTop="10dp"
+                                        android:paddingRight="18dp"
+                                        android:paddingBottom="20dp"
+                                        android:visibility="gone"
+                                        android:paddingLeft="30dp"
+                                        android:orientation="horizontal">
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+
+                                            android:orientation="vertical">
+
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_11sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_regular"
+                                                android:text="@string/gross_payable">
+                                            </TextView>
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="@dimen/_4sdp"
+                                                android:orientation="horizontal">
+                                                <ProgressBar
+                                                    android:progressDrawable="@drawable/progress_smart_view"
+                                                    style="?android:attr/progressBarStyleHorizontal"
+                                                    android:id="@+id/GrossPayable_progress"
+                                                    android:layout_marginTop="@dimen/_1sdp"
+                                                    android:layout_marginEnd="@dimen/_5sdp"
+                                                    android:layout_width="@dimen/_90sdp"
+                                                    android:layout_height="@dimen/_10sdp"
+                                                    android:max="100"
+                                                    tools:progress="25"
+                                                    android:progress="20"
+                                                    android:indeterminateOnly="false"
+                                                    android:layout_gravity="center" />
+
+                                                <TextView
+                                                    android:id="@+id/property_smart_GrossPayable"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/_25">
+
+                                                </TextView>
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/_11sdp"
+                                                    android:textColor="@color/black"
+                                                    android:fontFamily="@font/sweetsanspro_regular"
+                                                    android:text="@string/person_sign">
+                                                </TextView>
+                                            </LinearLayout>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                            <!--                        Details view-->
+                            <LinearLayout
+                                android:id="@+id/property_detail_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="25dp"
+                                    android:paddingBottom="20dp"
+                                    android:paddingLeft="30dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:layout_marginEnd="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/bg_light_blue_color"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/installment_payable">
+                                        </TextView>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:layout_marginEnd="5dp"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/rs">
+                                            </TextView>
+                                            <TextView
+                                                android:id="@+id/property_detail_installmentPayable"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/_925_000">
+                                            </TextView>
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/bg_light_blue_color"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/total_balance">
+                                        </TextView>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:layout_marginEnd="5dp"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/rs">
+                                            </TextView>
+                                            <TextView
+                                                android:id="@+id/property_detail_totalBalance"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/_925_000">
+                                            </TextView>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:alpha="0.8"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:background="@color/dim_gray">
+                                </View>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="25dp"
+                                    android:paddingBottom="20dp"
+                                    android:paddingLeft="30dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layout_marginEnd="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/bg_light_blue_color"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/current_outstanding">
+                                        </TextView>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:layout_marginEnd="5dp"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/rs">
+                                            </TextView>
+                                            <TextView
+                                                android:id="@+id/property_detail_Current_Outstanding"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/_925_000">
+                                            </TextView>
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:alpha="0.8"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:background="@color/dim_gray">
+                                </View>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="25dp"
+                                    android:paddingBottom="20dp"
+                                    android:paddingLeft="30dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:layout_marginEnd="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/bg_light_blue_color"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/surcharge_payable">
+                                        </TextView>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:layout_marginEnd="5dp"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/rs">
+                                            </TextView>
+                                            <TextView
+                                                android:id="@+id/property_detail_SurchargePayable"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/_925_000">
+                                            </TextView>
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/bg_light_blue_color"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/surcharge_paid">
+                                        </TextView>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:layout_marginEnd="5dp"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/rs">
+                                            </TextView>
+                                            <TextView
+                                                android:id="@+id/property_detail_SurchargePaid"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/_925_000">
+                                            </TextView>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:alpha="0.8"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:background="@color/dim_gray">
+                                </View>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="25dp"
+                                    android:paddingBottom="20dp"
+                                    android:paddingLeft="30dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:layout_marginEnd="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/bg_light_blue_color"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/surcharge_waived">
+                                        </TextView>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:layout_marginEnd="5dp"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/rs">
+                                            </TextView>
+                                            <TextView
+                                                android:id="@+id/property_detail_SurchargeWaived"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/_925_000">
+                                            </TextView>
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/bg_light_blue_color"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/surcharge_balance">
+                                        </TextView>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:layout_marginEnd="5dp"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/rs">
+                                            </TextView>
+                                            <TextView
+                                                android:id="@+id/property_detail_Surchargebalance"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/_925_000">
+                                            </TextView>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:alpha="0.8"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:background="@color/dim_gray">
+                                </View>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="25dp"
+                                    android:paddingBottom="20dp"
+                                    android:paddingLeft="30dp"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:layout_marginEnd="10dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/bg_light_blue_color"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/net_outstanding">
+                                        </TextView>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:layout_marginEnd="5dp"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/rs">
+                                            </TextView>
+                                            <TextView
+                                                android:id="@+id/property_detail_NetOutstanding"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/_925_000">
+                                            </TextView>
+                                        </LinearLayout>
+
+
+
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:orientation="vertical">
+
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:textColor="@color/bg_light_blue_color"
+                                            android:fontFamily="@font/sweetsanspro_regular"
+                                            android:text="@string/gross_payable">
+                                        </TextView>
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:layout_marginEnd="5dp"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/rs">
+                                            </TextView>
+                                            <TextView
+                                                android:id="@+id/property_detail_GrossPayable"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textSize="@dimen/_18sdp"
+                                                android:textColor="@color/black"
+                                                android:fontFamily="@font/sweetsanspro_bold"
+                                                android:text="@string/_925_000">
+                                            </TextView>
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+
+                                android:layout_marginBottom="30dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/black"
+                                    android:text="@string/shared_with"
+                                    android:padding="10dp"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/sweetsanspro_bold"
+                                    android:textSize="@dimen/_18sdp">
+                                </TextView>
+
+
+
+                                <LinearLayout
+                                    android:id="@+id/shared"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginEnd="20dp"
+                                    android:layout_marginStart="20dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/property_share_acc_image"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                        <FrameLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp">
+
+
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/Shareuser1"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:elevation="12dp"
+                                                app:cardCornerRadius="25dp"
+                                                android:layout_centerHorizontal="true">
+                                                <ImageView
+                                                    android:id="@+id/Shareuser_image1"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_width="match_parent"
+                                                    android:src="@drawable/ic_baseline_person_24"
+                                                    android:scaleType="centerCrop"/>
+                                            </androidx.cardview.widget.CardView>
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/Shareuser2"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:elevation="12dp"
+                                                android:layout_marginStart="30dp"
+                                                android:backgroundTint="@color/light_dim_gray"
+                                                app:cardCornerRadius="25dp"
+                                                android:layout_centerHorizontal="true">
+                                                <ImageView
+                                                    android:id="@+id/Shareuser_image2"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_width="match_parent"
+                                                    android:src="@drawable/ic_baseline_person_24"
+                                                    android:scaleType="centerCrop"/>
+                                            </androidx.cardview.widget.CardView>
+
+                                            <androidx.cardview.widget.CardView
+                                                android:id="@+id/Shareuser3"
+                                                android:layout_width="50dp"
+                                                android:layout_height="50dp"
+                                                android:elevation="12dp"
+                                                android:layout_marginStart="60dp"
+                                                app:cardCornerRadius="25dp"
+                                                android:layout_centerHorizontal="true">
+                                                <ImageView
+                                                    android:id="@+id/Shareuser_image3"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_width="match_parent"
+                                                    android:src="@drawable/ic_baseline_person_24"
+                                                    android:scaleType="centerCrop"/>
+                                            </androidx.cardview.widget.CardView>
+
+
+
+
+                                        </FrameLayout>
+                                        <TextView
+                                            android:id="@+id/shared_account_users_Extra"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_13sdp"
+                                            android:layout_gravity="center"
+                                            android:visibility="invisible"
+                                            android:textColor="@color/bg_light_blue_color"
+                                            android:fontFamily="@font/sweetsanspro_bold"
+                                            android:text="@string/_1" >
+                                        </TextView>
+                                        <TextView
+                                            android:id="@+id/shared_account_users"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_12sdp"
+                                            android:layout_gravity="center"
+                                            android:visibility="gone"
+                                            android:backgroundTint="@color/light_dim_gray"
+                                            android:textColor="@color/bg_light_blue_color"
+                                            android:fontFamily="@font/sweetsanspro_bold"
+                                            android:text="@string/_2_users">
+                                        </TextView>
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center|end">
+                                        <LinearLayout
+                                            android:id="@+id/update_details_complains"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/rounded_blue_button"
+                                            android:layout_gravity="center"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/propertyDetail_viewDetail_btn"
+                                                android:layout_width="@dimen/_95sdp"
+                                                android:layout_height="@dimen/_32sdp"
+                                                android:fontFamily="@font/sweetsanspro_regular"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:text="@string/view_details"
+                                                android:textAllCaps="false"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_11sdp">
+                                            </TextView>
+                                            <TextView
+                                                android:id="@+id/shared_property"
+                                                android:layout_width="@dimen/_95sdp"
+                                                android:layout_height="@dimen/_32sdp"
+                                                android:fontFamily="@font/sweetsanspro_regular"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:visibility="gone"
+                                                android:text="@string/share"
+                                                android:textAllCaps="false"
+                                                android:textColor="@color/white"
+                                                android:textSize="@dimen/_11sdp">
+                                            </TextView>
+
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/no_Acconunts"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:visibility="gone"
+                                    android:padding="@dimen/_15sdp"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:text="@string/no_shared_accounts"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:textSize="@dimen/_13sdp">
+                                    </TextView>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+            <include
+                layout="@layout/top_city_logo_with_border">
+            </include>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

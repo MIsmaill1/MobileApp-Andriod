@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/item_box_frame"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:background="@color/bg_gray_color"
+            android:orientation="vertical"
+            android:layout_gravity="fill_horizontal">
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingRight="15dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/unActive_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/maintance_icon_blue" />
+                <ImageView
+                    android:id="@+id/active_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"
+                    android:src="@mipmap/user_white_icon" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/itemname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:text="@string/maintance"
+        android:textColor="@color/bg_light_blue_color"
+        android:fontFamily="@font/sweetsanspro_bold"
+        android:textSize="@dimen/_13sdp" />
+
+</LinearLayout>

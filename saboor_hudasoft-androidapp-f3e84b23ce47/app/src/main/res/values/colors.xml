@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#D32F2F</color>
+
+<!--    new color add in top city-->
+
+    <color name="nav_bar_blue_color">#004281</color>
+    <color name="bg_mhendi_color">#E4C451</color>
+    <color name="bg_gray_color">#EDEAEA</color>
+    <color name="bg_light_blue_color">#004281</color>
+    <color name="color1">#BCBCBC</color>
+    <color name="dim_gray">#F1F1F1</color>
+    <color name="light_dim_gray">#B0FFFFFF</color>
+    <color name="light_blue">#EBF3F9</color>
+    <color name="dark_green">#12812F</color>
+    <color name="full_bg_light_blue">#AB004281</color>
+<!--    <color name="box_light_blue_color">#D0004281</color>-->
+<!--    <color name="box_light_blue_color">#D00A4A87</color>-->
+    <color name="box_light_blue_color">#C3042349</color>
+    <color name="box_light_blue_color1">#EE2C5D8A</color>
+    <color name="bg_features">#EDEFF3</color>
+    <color name="line_menu">#2D004281</color>
+    <color name="image_overlay_color">#33000000</color>
+    <color name="user_textfield_bg">#F3F2F2</color>
+    <color name="app_landing_pro_bg">#F6F6F6</color>
+    <color name="dashboard_box_bg">#F1F6FB</color>
+    <color name="month_text_color">#687888</color>
+
+
+</resources>

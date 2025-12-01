@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Activity.PaymentDetailReceipt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/top_city_logo_with_border">
+                </include>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:id="@+id/back_to_paymentDetail_recipt"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_30sdp">
+                                <ImageView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/blue_back_left_arrow_icon">
+
+                                </ImageView>
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/sweetsanspro_bold"
+                                android:text="@string/payment_receipt"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:paddingTop="4dp">
+
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/notification_paymentDetailrecipt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="fitXY"
+                                    android:src="@mipmap/notification_icon"></ImageView>
+
+                                <LinearLayout
+                                    android:id="@+id/notification_Count_bg"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp"
+                                    android:background="@drawable/noti_count_circle"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginStart="@dimen/_13sdp">
+                                    <TextView
+                                        android:id="@+id/notification_Count"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/white"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:visibility="visible"
+                                        android:fontFamily="@font/sweetsanspro_regular"
+                                        android:textSize="@dimen/_8sdp"
+                                        android:text="@string/_23">
+                                    </TextView>
+                                </LinearLayout>
+                            </FrameLayout>
+                            <ImageView
+                                android:id="@+id/user_icon_paymentDetailrecipt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:src="@mipmap/user_icon"></ImageView>
+
+                            <LinearLayout
+                                android:id="@+id/signup_btn_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:src="@mipmap/user_icon">
+                                </ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:gravity="bottom"
+                                    android:layout_marginStart="10dp"
+                                    android:textColor="@color/bg_light_blue_color"
+                                    android:text="Signup">
+                                </TextView>
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:layout_marginTop="@dimen/_10sdp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:text="@string/these_fields_are_required">
+                            </TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginStart="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black"
+                                android:text="@string/token_advance">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="49dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rounded_text_field_blue"
+                                android:gravity="center|top"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <EditText
+                                    android:id="@+id/token"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:inputType="text"
+
+                                    android:layout_marginStart="3dp"
+                                    android:hint="@string/token"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="Deprecated" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black"
+                                android:text="@string/registration_no1">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="49dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rounded_text_field_blue"
+                                android:gravity="center|top"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <EditText
+                                    android:id="@+id/registration_no"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:inputType="text"
+
+                                    android:hint="@string/registration_no"
+                                    android:layout_marginStart="3dp"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="Deprecated" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginStart="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black"
+                                android:text="@string/plot_size">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="49dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rounded_text_field_blue"
+                                android:gravity="center|top"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <EditText
+                                    android:id="@+id/plot_size"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:inputType="text"
+
+                                    android:hint="@string/plot_size"
+                                    android:layout_marginStart="3dp"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="Deprecated" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginStart="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black"
+                                android:text="@string/typeofplot">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="49dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rounded_text_field_blue"
+                                android:gravity="center|top"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <EditText
+                                    android:id="@+id/type_of_plot_ex_corner_side"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:inputType="text"
+
+                                    android:hint="@string/type_of_plot_ex_corner_side"
+                                    android:layout_marginStart="3dp"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="Deprecated" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginStart="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black"
+                                android:text="@string/rupee">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="49dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rounded_text_field_blue"
+                                android:gravity="center|top"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <EditText
+                                    android:id="@+id/rupee"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+
+                                    android:hint="@string/rupee"
+                                    android:layout_marginStart="3dp"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="Deprecated" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginStart="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black"
+                                android:text="@string/email_re">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="49dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rounded_text_field_blue"
+                                android:gravity="center|top"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <EditText
+                                    android:id="@+id/email"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:inputType="text"
+                                    android:hint="@string/useremail_domainname_com"
+                                    android:layout_marginStart="3dp"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="Deprecated" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:text="@string/received_with_thanksfrom_mr_mrs_ms">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="49dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rounded_text_field_blue"
+                                android:gravity="center|top"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <EditText
+                                    android:id="@+id/name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:inputType="text"
+                                    android:hint="@string/name"
+                                    android:layout_marginStart="3dp"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="Deprecated" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:text="@string/plot">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="49dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rounded_text_field_blue"
+                                android:gravity="center|top"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <EditText
+                                    android:id="@+id/plot"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:inputType="text"
+                                    android:hint="@string/plot"
+                                    android:layout_marginStart="3dp"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="Deprecated" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginStart="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black"
+                                android:text="@string/block">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="49dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rounded_text_field_blue"
+                                android:gravity="center|top"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <EditText
+                                    android:id="@+id/block"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:inputType="text"
+                                    android:hint="@string/block"
+                                    android:layout_marginStart="3dp"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="Deprecated" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="bold"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black"
+                                android:text="@string/transactionIDBankReceiptNumber">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="49dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rounded_text_field_blue"
+                                android:gravity="center|top"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <EditText
+                                    android:id="@+id/transcation_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:inputType="text"
+                                    android:hint="@string/transcation_id"
+                                    android:layout_marginStart="3dp"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="Deprecated" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:text="@string/amountInWords">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="49dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rounded_text_field_blue"
+                                android:gravity="center|top"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <EditText
+                                    android:id="@+id/amountInWords"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:inputType="text"
+                                    android:hint="@string/amountInWords"
+                                    android:layout_marginStart="3dp"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="Deprecated" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginStart="10dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/sweetsanspro_regular"
+                                android:textColor="@color/black"
+                                android:text="@string/cnic_re">
+                            </TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="49dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rounded_text_field_blue"
+                                android:gravity="center|top"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <EditText
+                                    android:id="@+id/cnic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:inputType="number"
+                                    android:hint="@string/_42101_0372650_2"
+                                    android:layout_marginStart="3dp"
+                                    android:maxLength="15"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp"
+                                    tools:ignore="Deprecated" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:gravity="center">
+                            <LinearLayout
+                                android:id="@+id/online_payment_receipt_update"
+                                android:layout_width="184dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/blue_button_rounded"
+                                android:gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/sweetsanspro_regular"
+                                    android:text="@string/submit"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_11sdp">
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
